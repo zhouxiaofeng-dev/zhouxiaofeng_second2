@@ -1,0 +1,144 @@
+.page2Header {
+    width: 1519px;
+    height: 63px;
+    border-bottom: 1px solid #ddd;
+}
+
+.page2Img {
+    float: left;
+    width: 60px;
+    height: 63px;
+    text-align: center;
+    line-height: 63px;
+}
+
+.page2Img::before {
+    width: 19px;
+    height: 19px;
+    content: '\f03e';
+    font-family: 'icomoon';
+    font-size: 23px;
+}
+
+.page2title {
+    float: left;
+    width: 900px;
+    height: 60px;
+    font-size: 22px;
+    text-indent: 10px;
+    line-height: 60px;
+    border: none;
+    outline: none;
+}
+
+.page2tool {
+    width: 1519px;
+    height: 35px;
+    border-bottom: 1px solid #e1e4e8;
+    background-color: #fafbfc;
+    line-height: 50px;
+}
+
+.tool_ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    width: 612px;
+    height: 24px;
+}
+
+.tool_li {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.tool_img {
+    width: 45px;
+    height: 33px;
+}
+
+.page2Tip {
+    position: absolute;
+    top: -39px;
+    right: -2px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10%;
+    background-color: #999999;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.page2Tri {
+    position: absolute;
+    top: 1px;
+    right: 7px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #999;
+}
+
+.page2Main {
+    font-size: 24px;
+    outline: none;
+}
+
+.writeArticle {
+    float: right;
+    width: 62px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 14px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #1d7dfa;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.write-main {
+    float: right;
+    width: 62px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 14px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #1d7dfa;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.writeArtID {
+    float: right;
+    width: 120px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 14px;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 30px;
+}
+
+.writeuserID {
+    float: right;
+    width: 120px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 14px;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 30px;
+}

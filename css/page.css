@@ -1,0 +1,10 @@
+.page_1,
+.page_2 {
+    position: relative;
+    width: 1519px;
+    height: 800px;
+}
+
+.page_2 {
+    display: none;
+}

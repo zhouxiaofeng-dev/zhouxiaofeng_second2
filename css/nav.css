@@ -1,0 +1,32 @@
+    .nav {
+        position: fixed;
+        top: 61px;
+        width: 1519px;
+        height: 45px;
+        border-bottom: 1px solid #f1f1f1;
+        background-color: #fff;
+        z-index: 100;
+    }
+    
+    .nav_main {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .nav_main li {
+        height: 45px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav_main li a {
+        padding: 0 2rem 0 0;
+        font-size: 14px;
+    }
+    
+    .nav_main_1 {
+        color: #007fff;
+        margin-left: 10px;
+    }

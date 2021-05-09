@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button class="btn">登录</button>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="js/axios.js"></script>
+    <script>
+        var btn = document.querySelector('.btn');
+        const httpName = "http://47.100.42.144:3389"
+        let userId = localStorage.userId;
+        console.log(userId);
+
+        function postAxios(url, obj) {
+            console.log(obj)
+            url = httpName.concat(url);
+            return new Promise((resolve, reject) => {
+                axios.post(url, obj)
+                    .then(result => {
+                        resolve(result.data.data)
+                    })
+                    .catch(error => {
+                        reject(error)
+                    })
+            })
+        }
+        btn.onclick = function() {
+            var info = {
+                username: 'zxf1',
+                password: '111'
+            }
+            postAxios('/user/login', info)
+                .then(result => {
+                    // 获取userId
+                    userId = result.userId;
+                    console.log(userId);
+                    localStorage.userId = userId;
+                    if (userId == "undefined") {
+                        alert("账号或密码错误")
+                    } else {
+                        alert("登录成功")
+
+                    }
+                })
+        }
+    </script>
+</body>
+
+</html>
